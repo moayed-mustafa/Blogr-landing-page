@@ -14,17 +14,7 @@
 
   <title>Frontend Mentor | [Blogr]</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
 
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
@@ -35,13 +25,14 @@
         <!-- Nav -->
         <div class="nav">
           <span id="logo">
-            <h4>Blogr</h4>
+            <img src="images/logo.svg">
           </span>
           <ul id="main-nav">
             <!-- 1st -->
-            <li>
-              Overview
-              <ul id="inner-nav">
+            <li class="main-list-item">
+              <span>Overview</span>
+              <img src="images/icon-arrow-light.svg">
+              <ul id="inner-nav" class="inner-list">
                 <li>Price</li>
                 <li>Marketplace</li>
                 <li>Feature</li>
@@ -51,8 +42,10 @@
               </li>
               <!-- 2nd -->
 
-            <li>Company
-              <ul id="scnd-inner-nav">
+            <li class="main-list-item">
+              <span>Company</span>
+              <img src="images/icon-arrow-light.svg">
+              <ul id="scnd-inner-nav" class="inner-list">
                 <li>About</li>
                 <li>Team</li>
                 <li>Blog</li>
@@ -60,8 +53,10 @@
               </ul>
             </li>
             <!-- 3rd -->
-            <li>Contact
-              <ul id="third-inner-nav">
+            <li class="main-list-item">
+              <span>Contact</span>
+              <img src="images/icon-arrow-light.svg">
+              <ul id="third-inner-nav" class="inner-list">
                 <li>Contact</li>
                 <li>NewsLetetr</li>
                 <li>LinkedIn</li>
@@ -70,21 +65,21 @@
             </ul>
             <!-- Action Buttons -->
             <div class="action-buttons">
-              <button class="main-action-btn">Login</button>
+              <button class="main-action-btn" id="login-btn">Login</button>
               <button class="secondary-action-btn">Sign Up</button>
             </div>
             </div>
             <!-- Actions Box -->
             <div class="actions-box">
               <div class="header-box">
-                <h2>A modern publishing platform</h2>
+                <h1>A modern publishing platform</h1>
               </div>
               <div class="paragraph-box">
                 <p>Grow your audience and build your online brand</p>
               </div>
               <div class="buttons-box">
-                <button class="main-action-btn">Start for Free</button>
-                <button class="secondary-action-btn">Learn More</button>
+                <button class="secondary-action-btn">Start for Free</button>
+                <button class="main-action-btn" id="main-btn-id">Learn More</button>
               </div>
             </div>
             </div>
