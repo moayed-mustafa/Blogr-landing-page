@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="section-two-style.css">
 
   <title>Frontend Mentor | [Blogr]</title>
 
@@ -30,14 +31,15 @@
           <ul id="main-nav">
             <!-- 1st -->
             <li class="main-list-item">
-              <span>Overview</span>
+              <span class="overview">Overview</span>
               <img src="images/icon-arrow-light.svg">
-              <ul id="inner-nav" class="inner-list">
-                <li>Price</li>
-                <li>Marketplace</li>
-                <li>Feature</li>
-                <li>Integration</li>
-
+              <ul>
+                <div class="inner-list">
+                  <li>Price</li>
+                  <li>Marketplace</li>
+                  <li>Feature</li>
+                  <li>Integration</li>
+                </div>
               </ul>
               </li>
               <!-- 2nd -->
@@ -45,21 +47,25 @@
             <li class="main-list-item">
               <span>Company</span>
               <img src="images/icon-arrow-light.svg">
-              <ul id="scnd-inner-nav" class="inner-list">
-                <li>About</li>
-                <li>Team</li>
-                <li>Blog</li>
-                <li>Careers</li>
+              <ul>
+                <div class="inner-list">
+                  <li>About</li>
+                  <li>Team</li>
+                  <li>Blog</li>
+                  <li>Careers</li>
+                </div>
               </ul>
             </li>
             <!-- 3rd -->
             <li class="main-list-item">
               <span>Contact</span>
               <img src="images/icon-arrow-light.svg">
-              <ul id="third-inner-nav" class="inner-list">
-                <li>Contact</li>
-                <li>NewsLetetr</li>
-                <li>LinkedIn</li>
+              <ul>
+                <div class="inner-list">
+                  <li>Contact</li>
+                  <li>NewsLetetr</li>
+                  <li>LinkedIn</li>
+                </div>
               </ul>
             </li>
             </ul>
@@ -96,12 +102,12 @@
                     The editor supports management of multiple blogs and allows easy manipulation of embeds such as images,
                     videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or
                     change the looks of a blog.
-            </p>
-            <h2>Robust content management</h2>
-            <p>
-              Flexible content management enables users to easily move through posts. Increase the usability of your blog
-              by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
-            </p>
+                  </p>
+                  <h2>Robust content management</h2>
+                  <p>
+                    Flexible content management enables users to easily move through posts. Increase the usability of your blog
+                    by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+                  </p>
             </div>
             <div class="img-box">
               <img src="images/illustration-editor-desktop.svg">
@@ -115,7 +121,7 @@
               </div>
               <div class="title-description-box">
                 <span>
-                  <h2>State of the ArtInfrastructure</h2>
+                  <h2>State of the Art Infrastructure</h2>
                 </span>
                 <span>
                   <p>
@@ -126,7 +132,7 @@
             </div>
             </div>
             <!-- 2nd Info Box -->
-            <div class="info-box">
+            <div class="info-box" id="margin-class">
               <div class="img-title-description-box">
                 <div class="img-box">
                   <img src="images/illustration-laptop-desktop.svg">

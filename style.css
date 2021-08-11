@@ -1,5 +1,6 @@
 body{
 font-family: 'Overpass', sans-serif;
+margin:0px;
 }
 ul{
     margin-block-start: 0px;
@@ -28,7 +29,7 @@ padding:0;
     font-weight:bold;
     border: solid 1px;
     padding:8px;
-    border-bottom-left-radius: 25px;
+    border-bottom-left-radius: 90px;
     padding-bottom: 64px;
 }
 .nav{
@@ -38,17 +39,27 @@ padding:0;
 }
 .inner-list{
     display:none;
+    color:hsl(208, 49%, 24%);
+    background-color: hsl(0, 0%, 100%);
+    list-style-type: none;
+    padding:12px;
+    min-width:60px;
+    position:absolute;
 }
+
 #main-nav{
     display: flex;
     list-style: none;
     flex-grow: 1;
     margin-left:8px;
-    /* !the hidden view should change on hover or something */
-    /* border: solid 1px; */
+
 }
 .main-list-item{
     margin-left: 12px;
+    position: relative;
+}
+.main-list-item:hover .inner-list{
+    display:block
 }
 .action-buttons{
     /* border: solid 1px black; */
