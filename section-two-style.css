@@ -43,6 +43,32 @@
     display:flex;
     flex-direction: column;
     align-items:center;
-    justify-content:center
+    justify-content:center;
+    border:solid 1px
 
+}
+.title-description-box p{
+    text-align: center;
+     /* border:solid 1px; */
+    width:75%
+}
+
+.footer-box{
+    background-color:hsl(237, 17%, 21%);
+    border-top-right-radius: 90px;
+    color:hsl(0, 0%, 100%);
+    display:flex;
+    align-items:flex-start;
+    justify-content:space-around;
+    padding:32px;
+}
+.box-item{
+    margin-top:32px;
+    padding:8px;
+}
+.main-item{
+    font-weight: bolder;
+}
+.list-item{
+    font-size:small
 }
