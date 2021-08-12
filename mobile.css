@@ -1,0 +1,128 @@
+/* ! Mobile Style */
+
+@media only screen and (max-width: 375px) {
+	.container {
+		padding: 0;
+	}
+	.layout-container {
+		display: flex;
+		flex-direction: column;
+		overflow-x: hidden;
+	}
+	.main-section {
+		background-color: hsl(13, 100%, 72%);
+		color: hsl(0, 0%, 100%);
+		font-weight: bold;
+		border: solid 1px;
+		padding: 8px;
+		border-bottom-left-radius: 90px;
+		padding-bottom: 64px;
+	}
+	.nav {
+		display: none;
+	}
+	.mobile-nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 8px;
+		margin-bottom: 64px;
+	}
+	.nav-icon-close {
+		display: none;
+	}
+	.nav-icon-open :hover .menu-mob {
+		display: block;
+	}
+	.menu-mob {
+		display: none;
+	}
+	.actions-box {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.header-box h1 {
+		text-align: center;
+		text-indent: 68px;
+	}
+	.paragraph-box {
+		text-align: center;
+	}
+	.secondary-action-btn {
+		background-color: hsl(0, 0%, 100%);
+		color: hsl(13, 100%, 72%);
+		width: 150px;
+		height: 35px;
+		border-radius: 35px;
+		border: none;
+		font-weight: bold;
+	}
+	.main-action-btn {
+		width: 150px;
+		margin-right: 8px;
+		height: 35px;
+		border-radius: 35px;
+		border: none;
+		font-weight: bold;
+		background-color: transparent;
+		color: hsl(0, 0%, 100%);
+	}
+	#main-btn-id {
+		border: solid 1px;
+		margin-left: 8px;
+	}
+
+	.info-box {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.img-box {
+		display: none;
+	}
+	.img-title-description-box {
+		display: flex;
+		flex-direction: column;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		align-items: center;
+		justify-content: center;
+	}
+	.mobile-imgs {
+		display: none;
+	}
+	.phones-illustration-mobile {
+		border: solid black 1px;
+	}
+	.feature-box {
+		display: none;
+	}
+	.mobile-feature-box {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		background-color: hsl(237, 23%, 32%);
+		color: hsl(0, 0%, 100%);
+		height: 650px;
+		padding-top: -10px;
+		border-top-right-radius: 90px;
+		border-bottom-left-radius: 90px;
+        /* margin-top:32px; */
+	}
+	#margin-class {
+		margin-top: 4px;
+	}
+
+	/* Footer */
+	.footer-box {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}

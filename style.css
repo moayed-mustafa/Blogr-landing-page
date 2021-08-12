@@ -1,123 +1,122 @@
-body{
-font-family: 'Overpass', sans-serif;
-margin:0px;
-}
-ul{
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 0px;
-}
-.container{
-    /* Main box styles go here */
-padding:0;
-
-}
-.layout-container{
-    display: flex;
-    flex-direction:column;
-    /* padding:24px; */
-    /* width:1440px; */
-}
-.main-section{
-    /* background-image: url(images/); */
-    /* background-size:cover cover;
-    background-repeat: no-repeat; */
-    background-color: hsl(13, 100%, 72%);
-    color:hsl(0, 0%, 100%);
-    font-weight:bold;
-    border: solid 1px;
-    padding:8px;
-    border-bottom-left-radius: 90px;
-    padding-bottom: 64px;
-}
-.nav{
-    display: flex;
-    align-items: center;
-    /* justify-content: space-around; */
-    /* justify-content:space-between; */
-}
-.inner-list{
-    display:none;
-    color:hsl(208, 49%, 24%);
-    background-color: hsl(0, 0%, 100%);
-    list-style-type: none;
-    padding:12px;
-    min-width:60px;
-    position:absolute;
+body {
+	font-family: "Overpass", sans-serif;
+	margin: 0px;
 }
 
-#main-nav{
-    display: flex;
-    list-style: none;
-    flex-grow: 1;
-    margin-left:8px;
 
-}
-.main-list-item{
-    margin-left: 12px;
-    position: relative;
-}
-.main-list-item:hover .inner-list{
-    display:block
-}
-.action-buttons{
-    /* border: solid 1px black; */
-    padding-left: 8px;
-    padding-right: 8px;
-    padding-bottom: 16px;
-    padding-top: 8px;
-    flex-basis: 300px;
-    display: flex
-}
+/* ! Desktop Style */
 
-.secondary-action-btn{
-    background-color:hsl(0, 0%, 100%);
-    color:hsl(13, 100%, 72%);
-    width: 150px;
-    height:35px;
-    border-radius: 35px;
-    border:none;
-    font-weight:bold
+@media only screen and (min-width: 376px) {
+	ul {
+		margin-block-start: 0px;
+		margin-block-end: 0px;
+		margin-inline-start: 0px;
+		margin-inline-end: 0px;
+		padding-inline-start: 0px;
+	}
+	/* Main box styles go here */
+	.container {
+		padding: 0;
+	}
+	.layout-container {
+		display: flex;
+		flex-direction: column;
+	}
+	.main-section {
+		background-color: hsl(13, 100%, 72%);
+		color: hsl(0, 0%, 100%);
+		font-weight: bold;
+		border: solid 1px;
+		padding: 8px;
+		border-bottom-left-radius: 90px;
+		padding-bottom: 64px;
+	}
+	.nav {
+		display: flex;
+		align-items: center;
+	}
+	.mobile-nav {
+		display: none;
+	}
+	.inner-list {
+		display: none;
+		color: hsl(208, 49%, 24%);
+		background-color: hsl(0, 0%, 100%);
+		list-style-type: none;
+		padding: 12px;
+		min-width: 60px;
+		position: absolute;
+	}
 
+	#main-nav {
+		display: flex;
+		list-style: none;
+		flex-grow: 1;
+		margin-left: 8px;
+	}
+	.main-list-item {
+		margin-left: 12px;
+		position: relative;
+	}
+	.main-list-item:hover .inner-list {
+		display: block;
+	}
+	.action-buttons {
+		padding-left: 8px;
+		padding-right: 8px;
+		padding-bottom: 16px;
+		padding-top: 8px;
+		flex-basis: 300px;
+		display: flex;
+	}
 
-}
-.main-action-btn{
-    /* background-color:hsl(0, 0%, 100%);
-    color:hsl(13, 100%, 72%); */
-    width: 150px;
-    margin-right: 8px;
-     height:35px;
-    border-radius: 35px;
-    border:none;
-    font-weight:bold;
-    background-color:transparent;
-    color:hsl(0, 0%, 100%);
-}
-#main-btn-id{
-    border:solid 1px;
-    margin-left:8px;
-}
-#login-btn{
-    text-align:right;
-}
+	.secondary-action-btn {
+		background-color: hsl(0, 0%, 100%);
+		color: hsl(13, 100%, 72%);
+		width: 150px;
+		height: 35px;
+		border-radius: 35px;
+		border: none;
+		font-weight: bold;
+	}
+	.main-action-btn {
+		width: 150px;
+		margin-right: 8px;
+		height: 35px;
+		border-radius: 35px;
+		border: none;
+		font-weight: bold;
+		background-color: transparent;
+		color: hsl(0, 0%, 100%);
+	}
+	#main-btn-id {
+		border: solid 1px;
+		margin-left: 8px;
+	}
+	#login-btn {
+		text-align: right;
+	}
 
-.actions-box{
-    display: flex;
-    flex-direction:column;
-    /* border: solid 1px; */
-    width:50%;
-    margin: 0 auto;
-    justify-content:center;
-    align-items: center;
-}
-/* Out Of The Box Styles */
-.attribution {
-      font-size: 11px;
-      text-align: center;
+	.actions-box {
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+		margin: 0 auto;
+		justify-content: center;
+		align-items: center;
+	}
+	.attribution {
+		font-size: 11px;
+		text-align: center;
+	}
+
+	.attribution a {
+		color: hsl(228, 45%, 44%);
+	}
+    .mobile-img-box{
+        display: none
     }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
+    .mobile-feature-box{
+        display:none;
     }
+}

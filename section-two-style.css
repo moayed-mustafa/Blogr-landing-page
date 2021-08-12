@@ -1,18 +1,14 @@
 .info-box{
     display:flex;
     flex-direction:column;
-    /* justify-content: center; */
     align-items:center;
     margin-top:10px;
 }
 .img-title-description-box{
     display:flex;
-    /* outline: solid 1px red; */
     padding:8px;
-    /* height:800px; */
     overflow:hidden;
     margin-top:-75px;
-
 }
 .title-description{
     margin:4px;
@@ -48,7 +44,6 @@
 }
 .title-description-box p{
     text-align: center;
-     /* border:solid 1px; */
     width:75%
 }
 
