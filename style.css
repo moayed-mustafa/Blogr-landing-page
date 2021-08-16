@@ -38,6 +38,9 @@ body {
 	.mobile-nav {
 		display: none;
 	}
+	.inner-mobile-menu {
+		display: none;
+	}
 	.inner-list {
 		display: none;
 		color: hsl(208, 49%, 24%);
